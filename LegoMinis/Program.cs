@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LegoMinis.Head;
+using System;
 
 namespace LegoMinis
 {
@@ -6,7 +7,12 @@ namespace LegoMinis
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var head = new NathanHead();
+
+				    var figure = new Minifigure(head);
+						figure.DoStuff();
+
+						Console.ReadLine();
         }
     }
 }
